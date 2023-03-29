@@ -61,7 +61,7 @@ void display() {
 
 void status1() {
     for (int j = 0; j < n; j++) {
-        if (math[j] + english[j] / 2 >= 70 || math[j] > 80) {
+        if (status(rerata(math[j], english[j]), math[j]) == "lulus") {
             lulus++;
         }
         else {
